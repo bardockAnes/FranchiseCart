@@ -8,14 +8,14 @@
     "title": "مثال next-intl"
   },
   "LocaleLayout": {
-    "title": "مثال next-intl"
+    "title": "dz food"
   },
   "LocaleSwitcher": {
     "label": "تغيير اللغة",
     "locale": "{locale, select, en {إنجلزي} fr {فرنسي} ar {العربية} other {غير معروف}}"
   },
   "Manifest": {
-    "name": "مثال next-intl"
+    "name": "dz food"
   },
   "Navigation": {
     "kitchen": "المطبخ",
