@@ -1,0 +1,818 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+/* Header Styles */
+.header {
+  background-image: url('/images/hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.navLinks li a {
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navLinks li a:hover {
+  color: #e74c3c;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 800px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #e74c3c;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #c0392b;
+}
+
+/* About Us Styles */
+/* Global styles for the About Us section */
+.aboutUs {
+  background-color: #f4f4f4; /* Light grey background for a clean look */
+  padding: 40px 0; /* Adequate padding for spacing */
+  font-family: 'Arial', sans-serif; /* Clean and readable font */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto; /* Center align the content */
+  max-width: 1200px; /* Max width for larger screens */
+}
+
+.title {
+  font-size: 2.5rem; /* Large title for prominence */
+  color: #333; /* Dark grey color for text */
+  margin-bottom: 20px; /* Space below the title */
+  text-align: center; /* Center the title */
+}
+
+.description {
+  font-size: 1.1rem; /* Slightly larger font size for readability */
+  color: #555; /* Medium grey color for text */
+  line-height: 1.6; /* Increased line height for better readability */
+  text-align: center; /* Center the text */
+  margin-bottom: 20px; /* Space below paragraphs */
+}
+
+/* Product Catalog Styles */
+/* Styles pour la section Product Catalog */
+.catalogSection {
+  background-color: #ffffff; /* Fond blanc pour la clarté */
+  padding: 40px 0; /* Espacement adéquat */
+  font-family: 'Arial', sans-serif; /* Police propre et lisible */
+}
+
+.catalogContainer {
+  width: 80%;
+  margin: 0 auto; /* Centrer le contenu */
+  max-width: 1200px; /* Largeur maximale pour les grands écrans */
+}
+
+.catalogTitle {
+  font-size: 2.5rem; /* Grand titre pour la visibilité */
+  color: #333; /* Couleur gris foncé pour le texte */
+  margin-bottom: 20px; /* Espace sous le titre */
+  text-align: center; /* Centre le titre */
+}
+
+.catalogIntro {
+  font-size: 1.1rem; /* Taille de police légèrement plus grande */
+  color: #555; /* Couleur gris moyen pour le texte */
+  line-height: 1.6; /* Hauteur de ligne augmentée pour une meilleure lisibilité */
+  text-align: center; /* Centre le texte */
+  margin-bottom: 40px; /* Espace sous le paragraphe */
+}
+
+.cartCardContainer {
+  display: flex;
+  flex-wrap: wrap; /* Enroule les cartes sur la ligne suivante */
+  gap: 20px; /* Espace entre les cartes */
+  justify-content: center; /* Centre les cartes */
+}
+
+.cartCard {
+  background-color: #f9f9f9; /* Fond gris clair pour les cartes */
+  border: 1px solid #ddd; /* Bordure légère pour les cartes */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 20px;
+  width: 300px; /* Largeur fixe pour la cohérence */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile pour la profondeur */
+}
+
+.cartCardTitle {
+  font-size: 1.5rem; /* Taille de police pour les titres des cartes */
+  color: #333; /* Couleur gris foncé pour le texte */
+  margin-bottom: 10px; /* Espace sous les titres */
+}
+
+.cartCardDetails {
+  font-size: 1rem; /* Taille de police pour les détails des cartes */
+  color: #777; /* Couleur gris clair pour les détails */
+  margin-bottom: 10px; /* Espace sous les détails */
+}
+
+.cartCardMenu {
+  list-style-type: none; /* Supprime les puces */
+  padding: 0; /* Supprime le padding */
+}
+
+.cartCardMenu li {
+  margin-bottom: 5px; /* Espace entre les éléments de la liste */
+}
+
+.customCartCard {
+  background-color: #e1f5fe; /* Fond bleu clair pour la carte personnalisée */
+  border: 1px solid #b3e5fc; /* Bordure bleue pour la carte personnalisée */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 20px;
+  width: 300px; /* Largeur fixe pour la cohérence */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile pour la profondeur */
+}
+
+.customCartTitle {
+  font-size: 1.5rem; /* Taille de police pour le titre de la carte personnalisée */
+  color: #333; /* Couleur gris foncé pour le texte */
+  margin-bottom: 10px; /* Espace sous le titre */
+}
+
+.customCartDetails {
+  font-size: 1rem; /* Taille de police pour les détails de la carte personnalisée */
+  color: #777; /* Couleur gris clair pour les détails */
+  margin-bottom: 20px; /* Espace sous les détails */
+}
+
+.customizeButton {
+  background-color: #0288d1; /* Fond bleu pour le bouton */
+  color: #fff; /* Texte blanc pour le bouton */
+  border: none; /* Supprime la bordure */
+  padding: 10px 20px; /* Espacement pour le bouton */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur pointer pour le bouton */
+  font-size: 1rem; /* Taille de police pour le texte du bouton */
+  transition: background-color 0.3s; /* Transition douce pour la couleur de fond */
+}
+
+.customizeButton:hover {
+  background-color: #0277bd; /* Bleu plus foncé au survol */
+}
+
+@media (max-width: 768px) {
+  .cartCard {
+    width: 100%; /* Pleine largeur pour les écrans plus petits */
+  }
+}
+
+/* Become Franchisee Styles */
+/* Styles pour la section Devenir Franchisé */
+.franchiseeSection {
+  background-color: #f0f2f5; /* Fond gris très clair pour un aspect moderne */
+  padding: 60px 0; /* Espacement suffisant pour la section */
+  font-family: 'Arial', sans-serif; /* Police propre et lisible */
+}
+
+.franchiseeContainer {
+  width: 85%;
+  margin: 0 auto; /* Centrer le contenu */
+  max-width: 1200px; /* Largeur maximale pour les grands écrans */
+  background-color: #ffffff; /* Fond blanc pour les blocs de contenu */
+  border-radius: 8px; /* Coins arrondis pour les blocs */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile pour les blocs */
+  padding: 40px;
+}
+
+.franchiseeTitle {
+  font-size: 2.5rem; /* Grande taille de police pour le titre */
+  color: #333; /* Couleur gris foncé pour le texte */
+  margin-bottom: 20px; /* Espace sous le titre */
+  text-align: center; /* Centre le titre */
+}
+
+.franchiseeDescription {
+  font-size: 1.2rem; /* Taille de police légèrement plus grande pour la description */
+  color: #555; /* Couleur gris moyen pour le texte */
+  line-height: 1.6; /* Hauteur de ligne augmentée pour une meilleure lisibilité */
+  text-align: center; /* Centre le texte */
+  margin-bottom: 40px; /* Espace sous la description */
+}
+
+.franchiseeContent {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Espace entre les blocs de contenu */
+}
+
+.franchiseeInfo,
+.franchiseeSteps {
+  background-color: #fafafa; /* Fond gris clair pour les blocs de contenu */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 20px;
+}
+
+.infoTitle,
+.stepsTitle {
+  font-size: 1.8rem; /* Taille de police pour les sous-titres */
+  color: #333; /* Couleur gris foncé pour le texte */
+  margin-bottom: 15px; /* Espace sous les sous-titres */
+}
+
+.infoText {
+  font-size: 1.1rem; /* Taille de police pour le texte d'information */
+  color: #666; /* Couleur gris clair pour le texte */
+  line-height: 1.6; /* Hauteur de ligne augmentée pour une meilleure lisibilité */
+}
+
+.stepsList {
+  list-style-type: decimal; /* Liste numérotée pour les étapes */
+  padding-left: 20px; /* Espace à gauche pour les puces */
+}
+
+.stepsList li {
+  font-size: 1.1rem; /* Taille de police pour les étapes */
+  color: #666; /* Couleur gris clair pour les étapes */
+  margin-bottom: 10px; /* Espace entre les étapes */
+}
+
+.applyButton {
+  display: inline-block; /* Pour le style du bouton */
+  background-color: #007bff; /* Bleu pour le bouton */
+  color: #fff; /* Texte blanc pour le bouton */
+  padding: 12px 24px; /* Espacement intérieur pour le bouton */
+  border-radius: 5px; /* Coins arrondis */
+  text-decoration: none; /* Supprime la décoration du lien */
+  font-size: 1.1rem; /* Taille de police pour le texte du bouton */
+  text-align: center; /* Centre le texte du bouton */
+  transition: background-color 0.3s; /* Transition douce pour la couleur de fond */
+  margin-top: 20px; /* Espace au-dessus du bouton */
+  display: block; /* Bloc pour le centrage */
+  text-align: center; /* Centre le texte du bouton */
+}
+
+.applyButton:hover {
+  background-color: #0056b3; /* Bleu plus foncé au survol */
+}
+
+@media (max-width: 768px) {
+  .franchiseeTitle {
+    font-size: 2rem; /* Ajuster la taille du titre pour les écrans plus petits */
+  }
+
+  .franchiseeDescription {
+    font-size: 1rem; /* Ajuster la taille de la description pour les écrans plus petits */
+  }
+}
+
+
+/* Cart Locator Styles */
+/* CartLocator.css */
+
+.custom-marker {
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 8px;
+  width: 100px;
+  height: 40px;
+}
+
+.locatorSection {
+  padding: 60px 20px;
+  background-color: #f7f7f7;
+}
+
+.locatorContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.locatorTitle {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.locatorDescription {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.mapContainer {
+  background-color: #f0f2f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #0000001a;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.leafletMap {
+  height: 400px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: -50px;
+}
+
+.locatorCallToAction {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ctaText {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.ctaButton {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .locatorTitle {
+    font-size: 2rem;
+  }
+  .locatorDescription {
+    font-size: 1rem;
+  }
+}
+
+/* Blog Styles */
+/* Blog.css */
+
+.blogSection {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.blogContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.blogTitle {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.blogSubtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.blogGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.blogCard {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: calc(33.333% - 20px);
+  min-width: 300px;
+}
+
+.blogCard:hover {
+  transform: translateY(-5px);
+}
+
+.blogImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blogContent {
+  padding: 20px;
+  text-align: left;
+}
+
+.blogPostTitle {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blogPostMeta {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.blogPostExcerpt {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.readMoreLink {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.readMoreLink:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .blogCard {
+    width: 100%;
+  }
+}
+
+
+/* Events Styles */
+/* Events.css */
+
+.eventsSection {
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+}
+
+.eventsContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.eventsTitle {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.eventsDescription {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.eventsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.eventCard {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(33.333% - 20px);
+  min-width: 300px;
+  text-align: left;
+}
+
+.eventName {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.eventDate,
+.eventLocation {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.eventDescription {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.eventsCallToAction {
+  margin-top: 40px;
+}
+
+.ctaText {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.ctaButton {
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ctaButton:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .eventCard {
+    width: 100%;
+  }
+}
+
+/* Support Styles */
+/* Support.css */
+
+.supportSection {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.supportContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.supportTitle {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.supportDescription {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.supportOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.contactForm {
+  flex: 1;
+  min-width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.contactForm label {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contactForm button {
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contactForm button:hover {
+  background-color: #0056b3;
+}
+
+.faqSection {
+  flex: 1;
+  min-width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faqSection h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.faqItem {
+  margin-bottom: 20px;
+}
+
+.faqItem h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.faqItem p {
+  font-size: 1rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .supportOptions {
+    flex-direction: column;
+  }
+}
+/* Testimonials.css */
+
+.testimonialsSection {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.testimonialsContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonialsTitle {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.testimonialsIntro {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.testimonialsCarousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.testimonialCard {
+  flex: 0 0 300px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.testimonialFeedback {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.testimonialName {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.testimonialLocation {
+  font-size: 1rem;
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .testimonialsCarousel {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .testimonialCard {
+    margin: 0 auto;
+  }
+}

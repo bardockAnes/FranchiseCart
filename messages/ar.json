@@ -1,0 +1,64 @@
+{
+  "Error": {
+    "description": "<p>لقد واجهنا للأسف خطأ.</p><p>يمكنك المحاولة <retry>إعادة تحميل الصفحة</retry> التي كنت تزورها.</p>",
+    "title": "حدث خطأ ما!"
+  },
+  "IndexPage": {
+    "description": "هذا مثال أساسي يوضح استخدام <code>next-intl</code> مع موجه تطبيقات Next.js. حاول تغيير اللغة في الزاوية اليمنى العليا وشاهد كيف يتغير المحتوى.",
+    "title": "مثال next-intl"
+  },
+  "LocaleLayout": {
+    "title": "مثال next-intl"
+  },
+  "LocaleSwitcher": {
+    "label": "تغيير اللغة",
+    "locale": "{locale, select, en {إنجلزي} fr {فرنسي} ar {العربية} other {غير معروف}}"
+  },
+  "Manifest": {
+    "name": "مثال next-intl"
+  },
+  "Navigation": {
+    "kitchen": "المطبخ",
+    "pathnames": "Pathnames",
+    "me": "me",
+    "furniture": "الأثاث",
+    "contact": "إتصل",
+    "blog": "مدونة",
+    "about": "عنا",
+    "logo":"أثاث الغرب"
+  },
+  "NotFoundPage": {
+    "description": "يرجى التحقق من شريط العناوين في المتصفح أو استخدام التنقل للانتقال إلى صفحة معروفة.",
+    "title": "الصفحة غير موجودة"
+  },
+  "PageLayout": {
+    "links": {
+      "docs": {
+        "description": "تعرف على المزيد حول next-intl في الوثائق الرسمية.",
+        "href": "https://next-intl-docs.vercel.app/",
+        "title": "الوثائق"
+      },
+      "source": {
+        "description": "تصفح الكود المصدري لهذا المثال على GitHub.",
+        "href": "https://github.com/amannn/next-intl/tree/main/examples/example-app-router",
+        "title": "الكود المصدري"
+      }
+    }
+  },
+  "PathnamesPage": {
+    "description": "<p>أسماء المسارات مُعولمة أيضًا.</p><p>إذا كنت تستخدم اللغة الافتراضية، الإنجليزية، ستشاهد <code>/en/pathnames</code> في شريط العنوان بالمتصفح على هذه الصفحة.</p><p>إذا قمت بتغيير اللغة إلى الألمانية، فسيتم تعريب الرابط وفقًا لذلك (<code>/de/pfadnamen</code>).</p>",
+    "title": "أسماء المسارات"
+  },
+  "SpaceLandText": {
+    "sltt": "العنوان",
+    "sltd": "التفاصيل",
+    "sltbone": "الزر رقم واحد",
+    "sltbtwo": "الزر رقم اتنين"
+  },
+  "kitchen_designs": {
+    "title": "مطابخ بسيطة وأنيقة وبأسعار معقولة",
+    "details": "حوّل منزلك مع مطابخنا الرائعة التي تجمع بين الأناقة والتكلفة المناسبة. تصاميمنا الأنيقة مصممة لتناسب ذوقك وميزانيتك، مما يضمن أن يكون مطبخك جميلاً وعملياً. اكتشف المطبخ المثالي لمنزلك اليوم !",
+    "buttonone": "إتصل بنا",
+    "buttontwo": "المطابخ"
+  }
+}
